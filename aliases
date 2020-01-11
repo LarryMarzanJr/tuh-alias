@@ -1,0 +1,235 @@
+############################################################################################################ 
+#VIM Keyboard Shortcuts
+############################################################################################################ 
+#-----------------------------------------------------------------------------------------------------------
+# Cursor movement
+#-----------------------------------------------------------------------------------------------------------
+# h	move left
+# j	move down
+# k	move up
+# l	move right
+# w	jump by start of words (punctuation considered words)
+# W	jump by words (spaces separate words)
+# e	jump to end of words (punctuation considered words)
+# E	jump to end of words (no punctuation)
+# b	jump backward by words (punctuation considered words)
+# B	jump backward by words (no punctuation)
+# 0	(zero) start of line
+# ^	first non-blank character of line
+# $	end of line
+# G	Go To command (prefix with number
+# Note:	Prefix a cursor movement command with a number to repeat it. For example, 4j moves down 4 lines.
+# Insert Mode	Inserting/Appending text
+# i	start insert mode at cursor
+# I	insert at the beginning of the line
+# a	append after the cursor
+# A	append at the end of the line
+# o	open (append) blank line below current line (no need to press return)
+# O	open blank line above current line
+# ea	append at end of word
+# Esc	exit insert mode
+#-----------------------------------------------------------------------------------------------------------
+# Editing
+#-----------------------------------------------------------------------------------------------------------
+# r	replace a single character (does not use insert mode)
+# J	join line below to the current one
+# cc	change (replace) an entire line
+# cw	change (replace) to the end of word
+# c$	change (replace) to the end of line
+# s	delete character at cursor and subsitute text
+# S	delete line at cursor and substitute text (same as cc)
+# xp	transpose two letters (delete and paste, technically)
+# u	undo
+# .	repeat last command
+#-----------------------------------------------------------------------------------------------------------
+# Marking text (visual mode)
+#-----------------------------------------------------------------------------------------------------------
+# v	start visual mode, mark lines, then do command (such as y-yank)
+# V	start Linewise visual mode
+# o	move to other end of marked area
+# Ctrl+v	start visual block mode
+# O	move to Other corner of block
+# aw	mark a word
+# ab	a () block (with braces)
+# aB	a {} block (with brackets)
+# ib	inner () block
+# iB	inner {} block
+# Esc	exit visual mode
+#-----------------------------------------------------------------------------------------------------------
+# Visual commands
+#-----------------------------------------------------------------------------------------------------------
+# >	shift right
+# <	shift left
+# y	yank (copy) marked text
+# d	delete marked text
+# ~	switch case
+#-----------------------------------------------------------------------------------------------------------
+# Cut and Paste
+#-----------------------------------------------------------------------------------------------------------
+# yy	yank (copy) a line
+# 2yy	yank 2 lines
+# yw	yank word
+# y$	yank to end of line
+# p	put (paste) the clipboard after cursor
+# P	put (paste) before cursor
+# dd	delete (cut) a line
+# dw	delete (cut) the current word
+# x	delete (cut) current character
+#-----------------------------------------------------------------------------------------------------------
+# Exiting
+#-----------------------------------------------------------------------------------------------------------
+# :w	write (save) the file, but don't exit
+# :wq	write (save) and quit
+# :q	quit (fails if anything has changed)
+# :q!	quit and throw away changes
+# Search/Replace
+# /pattern	search for pattern
+# ?pattern	search backward for pattern
+# n	repeat search in same direction
+# N	repeat search in opposite direction
+# :%s/old/new/g	replace all old with new throughout file
+# :%s/old/new/gc	replace all old with new throughout file with confirmations
+# Working with multiple files
+# :e filename	Edit a file in a new buffer
+# :bnext (or :bn)	go to next buffer
+# :bprev (of :bp)	go to previous buffer
+# :bd	delete a buffer (close a file)
+# :sp filename	Open a file in a new buffer and split window
+# ctrl+ws	Split windows
+# ctrl+ww	switch between windows
+# ctrl+wq	Quit a window
+# ctrl+wv	Split windows vertically
+############################################################################################################ 
+
+
+
+#--------------------------------------------------------------
+# export path
+#--------------------------------------------------------------
+# refresh .bashrc alias sources:
+alias src='source /home/joenmarz/.bashrc'
+
+###############################################################
+
+
+#--------------------------------------------------------------
+# aliases
+#--------------------------------------------------------------
+
+# common in terminal
+alias cl='clear'
+alias CL='clear'
+alias EXIT='exit'
+alias poweroff='sudo poweroff'
+alias reboot='sudo reboot'
+alias install='sudo apt-get install'
+alias update='sudo apt-get update'
+alias upgrade='sudo apt-get upgrade'
+alias remove='sudo apt-get remove'
+alias purge='sudo apt-get purge'
+alias autoremove='sudo apt-get autoremove'
+alias dpkg='sudo dpkg'
+alias aptlist='apt list --installed'
+alias repo='sudo add-apt-repository'
+
+# laravel homestead
+alias vm='ssh vagrant@127.0.0.1 -p 2222'
+alias hsr='cd ~/Homestead && vagrant reload && vagrant provision'
+alias hs='cd ~/Homestead && vagrant up && vagrant provision'
+alias yaml='subl ~/.homestead/Homestead.yaml'
+# laravel aliases
+alias artisan='php artisan'
+alias serve='php artisan serve'
+alias vaprobash='curl -L http://bit.ly/vaprobash > Vagrantfile'
+
+# project path
+# for vagrant
+# alias vcode='cd /media/joenmarz/DATA/PHP/codes'
+# good ol apache
+#alias code='cd /var/www/html'
+alias code='cd /media/joenmarz/DATA/PHP/wampstack/apache2/htdocs'
+
+# for manual lamp
+#alias restartapache='sudo service apache2 restart'
+#alias restartmysql='sudo service mysql restart'
+#alias restartlamp='restartapache && restartmysql'
+
+# for bitnami lamp
+alias restartapache='sh ~/lampstack-5.6.28-1/ctlscript.sh restart apache'
+alias restartmysql='sh ~/lampstack-5.6.28-1/ctlscript.sh restart mysql'
+alias restartlamp='restartapache && restartmysql'
+#alias php='~/lampstack/php/bin/php'
+alias php='~/lampstack-5.6.28-1/php/bin/php'
+
+# PHP
+# 5.5
+# 5.6
+# 7.0
+# Enable / Disable xdebug by commenting out using semicolon ';' to the zend_extension=xdebug.so
+#alias xdebug='sudo vim /etc/php/7.0/cli/conf.d/20-xdebug.ini'
+
+# YII2 Framework
+# YII alias
+alias yii='php yii'
+#Install yii2 basic template
+alias yii2bas='composer create-project yiisoft/yii2-app-basic'
+#Install yii2 advanced template
+alias yii2adv='composer create-project yiisoft/yii2-app-advanced'
+#install yii2 template with gulp sass support
+alias yii2basgulp='create-project --prefer-dist --stability=dev jacmoe/yii2-app-basic-gulp-sass'
+#Install yii2 advanced template with gulp sass support
+alias yii2advgulp='composer create-project --prefer-dist --stability=dev jacmoe/yii2-app-advanced-gulp-sass'
+#GII Permissions
+alias gii_init='sudo chmod 755 -R frontend/models/ frontend/controllers/ frontend/views/ backend/models/ backend/controllers/ backend/views/'
+#--------------------------------------------------------
+# YII migrations
+# create migration: to auto add fields just add --fields="title:string,body:text"
+# to add column: yii migrate/create add_position_column_to_post_table --fields="position:integer"
+# to drop a column: yii migrate/create drop_position_column_from_post_table --fields="position:integer"
+alias create='yii migrate/create'
+# yii migrate
+alias up='yii migrate'
+# drop table
+alias down='yii migrate/down' #<space><migration_number> ex: down 3
+
+# edit aliases library
+alias al='vim /mnt/raid/home/joenmarz/Linux/my_aliases/aliases'
+
+# composer
+alias composer='php /usr/local/bin/composer'
+
+# file path
+alias documents='cd /media/joenmarz/DATA/Documents'
+alias music='cd /mnt/raid/plexmediaserver/music'
+alias pictures='cd /media/joenmarz/DATA/Pictures'
+alias videos='cd /media/joenmarz/DATA/Videos'
+alias downloads='cd /media/joenmarz/DATA/Downloads'
+alias data='cd /media/joenmarz/DATA'
+
+# youtube-dl
+# download with mp4 format
+alias youtube='youtube-dl -f 18 cit'
+
+# PLEX Media Server
+# go to plex library directory
+alias plexdir='clear; cd /mnt/raid/plexmediaserver; ls -l'
+# update /mnt/raid/plexmediaserver user & group recuresively plex:plex and permission to 755 drwxr-xr-x
+alias plexsync='clear; cd /mnt/raid; sudo chmod -R 775 plexmediaserver; sudo chown -R plex:plex plexmediaserver; cd /mnt/raid/plexmediaserver'
+
+# SSH
+# view current established ssh session
+alias established_ssh="sudo netstat -tnpa | grep 'ESTABLISHED.*sshd'"
+
+# Mount/Unmount USB
+alias mount_usb='sudo mount /dev/sdd1 /mnt/usb'
+alias umount_usb='sudo umount /mnt/usb'
+
+# PYTHON
+# python project directory
+alias pydir='cd ~/python_apps'
+# activate virtual environment for Python
+alias venv='source ~/python_apps/venv/bin/activate; clear'
+
+# Fixing dark blue colors on ubuntu bash
+ LS_COLORS='rs=0:di=1;35:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:';
+ export LS_COLORS
