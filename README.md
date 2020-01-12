@@ -3,7 +3,7 @@
 These are bash aliases and customization. Each file explained below.
 
 # Custom Prompt Color for Linux shell
-> ~/bashrc-alias/.bashrc
+# ~/bashrc-alias/.bashrc
 
 Customize the look of your shell prompt.
 You can change the color of each prompt section like:
