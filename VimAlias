@@ -1,7 +1,10 @@
-# Vim aliases by Joenmarz
+#Vim aliases by Joenmarz
 
 # sync .vimrc file from repository to user's home directory
 alias vimrc='cp -v /home/$USER/vimrc/.vimrc /home/$USER/'
 
 # Go to ~/.vim/colors directory
 alias vimcolors='cd /home/$USER/.vim/colors'
+
+# Go to ~/.vim/autoload directory
+alias vimautoload='cd /home/$USER/.vim/autoload'
