@@ -3,3 +3,6 @@
 
 # PythonProject aliases
 . /home/$USER/bashrc-alias/PythonProject
+
+# VimAlias
+. /home/$USER/bashrc-alias/VimAlias
