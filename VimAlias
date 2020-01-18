@@ -8,3 +8,6 @@ alias vimcolors='cd /home/$USER/.vim/colors'
 
 # Go to ~/.vim/autoload directory
 alias vimautoload='cd /home/$USER/.vim/autoload'
+
+# Go to ~/.vim/bundle directory
+alias vimbundle='cd /home/$USER/.vim/bundle'
