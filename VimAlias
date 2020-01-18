@@ -1,0 +1,4 @@
+# Vim aliases by Joenmarz
+
+# sync .vimrc file from repository to user's home directory
+alias vimrc='cp /home/$USER/vimrc/.vimrc /home/$USER/'
