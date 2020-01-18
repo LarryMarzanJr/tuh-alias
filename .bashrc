@@ -1,4 +1,4 @@
-# Custom Bash prompt by Joenmarz
+# Custom Bash prompt and some common linux alias command by Joenmarz
 
 # Prompt & Command Refference:
 # https://linoxide.com/how-tos/change-linux-shell-prompt-with-different-colors/
@@ -64,3 +64,9 @@ root_indicator_section="\[\e[${ri_color}m\]\$\[\e[m\]"		# root indicator (# or $
 #export PS1="\[\e[32m\][\[\e[m\]${username_section}\[\e[33m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[36m\]\w\[\e[m\]\[\e[32m\]]\[\e[m\]\[\e[32;47m\]\\$\[\e[m\]"
 
 export PS1="${open_bracket_section}${username_section}${at_section}${hostname_section} ${time_section} ${working_directory_section} ${root_indicator_section}${closed_bracket_section}"
+
+
+# COMMON LINUX COMMAND ALIAS
+
+# Refresh your .bashrc source
+alias src="source /home/$USER/.bashrc"
