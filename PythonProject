@@ -1,2 +1,7 @@
+# Python aliases by Joenmarz
+
+# Create Python Initial Project Folder
+alias pyinit="mkdir /home/$USER/Python && mkdir /home/$USER/Python/{Django,PyQt}"
+
 # Go to Python Project Directory
-alias pyproj=""
+alias pyproj="cd /home/$USER/Python/"
