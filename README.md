@@ -36,3 +36,6 @@ Go to line 33 of this file <b>(bashrc-alias/.bashrc)</b> to customize each promp
 - <b>ri_color</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to change <i>root indicator</i> color
 
 
+# PythonProject
+
+Custom alias for creating Python Project
