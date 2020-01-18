@@ -1,1 +1,5 @@
+# Custom Color for your Terminal Prompt
 . /home/$USER/bashrc-alias/.bashrc
+
+# PythonProject aliases
+. /home/$USER/bashrc-alias/PythonProject
