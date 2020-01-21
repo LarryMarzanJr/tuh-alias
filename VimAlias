@@ -1,5 +1,14 @@
 #Vim aliases by Joenmarz
 
+# Remove original vim installer
+alias vimclear='sudo apt remove vim -y'
+
+# Clone Vim Repository from Github.fom & recheck new installed vim path
+alias vimclone='git clone https://github.com/vim/vim.git && hash -r'
+
+# Configure Vim for python3 compatibility
+alias vimconfig='sudo ./configure --with-features=huge --enable-multibyte --enable-python3interp=yes --with-python3-config-dir=/usr/bin/python3-config --enable-gui=gtk2 --enable-cscope --enable-fail-if-missing --prefix=/usr/local'
+
 # sync .vimrc file from repository to user's home directory
 alias vimrc='cp -v /home/$USER/vimrc/.vimrc /home/$USER/.vimrc'
 
