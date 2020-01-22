@@ -1,5 +1,8 @@
 # Python aliases by Joenmarz
 
+# Setup Python Virtual Environment:
+# https://linoxide.com/linux-how-to/setup-python-virtual-environment-ubuntu/
+
 # Create Python Initial Project Folder
 alias pyinit="mkdir /home/$USER/Python && mkdir /home/$USER/Python/{Django,PyQt}"
 
