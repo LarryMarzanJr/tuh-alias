@@ -3,7 +3,7 @@
 # Create initial folder for Python project in your home directory
 # Setup Python Virtual Environment:
 # https://linoxide.com/linux-how-to/setup-python-virtual-environment-ubuntu/
-alias pyinit="mkdir /home/$USER/Python && mkdir /home/$USER/Python/{Django,PyQt} && sudo apt install -y python3-pip build-essential libssl-dev libffi-dev python3-dev python3-venv && pyproj && python3 -m venv virtual_environment"
+alias py-init="mkdir /home/$USER/Python && mkdir /home/$USER/Python/{Django,PyQt} && sudo apt install -y python3-pip build-essential libssl-dev libffi-dev python3-dev python3-venv && py-proj && python3 -m venv virtual_environment"
 
 # Activate Python virtual environment
 alias py-venv="source /home/$USER/Python/virtual_environment/bin/activate"
