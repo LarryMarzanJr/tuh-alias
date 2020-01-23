@@ -9,4 +9,4 @@ alias py-init="mkdir /home/$USER/Python && mkdir /home/$USER/Python/{Django,PyQt
 alias py-venv="source /home/$USER/Python/virtual_environment/bin/activate"
 
 # Go to Python Project Directory
-alias pyproj="cd /home/$USER/Python/"
+alias py-proj="cd /home/$USER/Python/"
