@@ -10,3 +10,9 @@
 
 # Go to Python Project Directory
 alias py-proj="cd /home/$USER/Python/"
+
+# Add pyenv executable to PATH
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
