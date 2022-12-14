@@ -24,4 +24,6 @@ alias reboot='sudo reboot'
 # alias autoremove='sudo apt-get autoremove'
 # alias dpkg='sudo dpkg'
 # alias aptlist='apt list --installed'
-# alias repo='sudo add-apt-repository' 
+# alias repo='sudo add-apt-repository'
+
+
