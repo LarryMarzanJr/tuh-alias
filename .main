@@ -1,8 +1,8 @@
-# Custom Color for your Terminal Prompt
-. /home/$USER/bashrc-alias/.bashrc
+# Linux Shell Aliases (.bashrc, .zshrc, etc.)
+. /home/$USER/bashrc-alias/.shell_alias
 
-# PythonProject aliases
-. /home/$USER/bashrc-alias/PythonProject
+# Python Aliases
+. /home/$USER/bashrc-alias/python_alias
 
-# VimAlias
-. /home/$USER/bashrc-alias/VimAlias
+# Vim / Nvim text editor Aliases
+. /home/$USER/bashrc-alias/vim_alias
