@@ -1,8 +1,8 @@
 # Linux Shell Aliases (.bashrc, .zshrc, etc.)
-. /home/$USER/bashrc-alias/.shell_alias
+. /home/$USER/.tuh-taste/modules/tuh-alias/.shell_alias
 
 # Python Aliases
-. /home/$USER/bashrc-alias/python_alias
+. /home/$USER/.tuh-taste/modules/tuh-alias/.python_alias
 
 # Vim / Nvim text editor Aliases
-. /home/$USER/bashrc-alias/vim_alias
+. /home/$USER/.tuh-taste/modules/tuh-alias/.vim_alias
