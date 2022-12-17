@@ -26,4 +26,9 @@ alias reboot='sudo reboot'
 # alias aptlist='apt list --installed'
 # alias repo='sudo add-apt-repository'
 
+# shortcut to my blog project
+alias blog="cd ~/Projects/Markdown/LarryMarzanJr.github.io"
+
+# shortcut to flutter projects
+alias dev="cd /home/joenmarz/Projects/Dart/"
 
