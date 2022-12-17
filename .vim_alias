@@ -1,16 +1,13 @@
 # Vim aliases by Joenmarz
 
 # Remove original vim installer
-alias vimclear='sudo apt remove vim -y'
+#alias vimclear='sudo apt remove vim -y'
 
 # Clone Vim Repository from Github.fom & recheck new installed vim path
-alias vimclone='git clone https://github.com/vim/vim.git && hash -r'
+#alias vimclone='git clone https://github.com/vim/vim.git && hash -r'
 
 # Configure Vim for python3 compatibility
-alias vimconfig='cd ~/vim && sudo apt install ncurses-dev -y && sudo make && sudo make install && sudo ./configure --with-features=huge --enable-multibyte --enable-python3interp=yes --with-python3-config-dir=/usr/bin/python3-config --enable-gui=gtk2 --enable-cscope --enable-fail-if-missing --prefix=/usr/local'
-
-# sync .vimrc file from repository to user's home directory
-alias vimrc='cp -v /home/$USER/vimrc/.vimrc /home/$USER/.vimrc && cp -v /home/$USER/vimrc/templates/html.skel /home/$USER/.vim/templates/html.skel'
+#alias vimconfig='cd ~/vim && sudo apt install ncurses-dev -y && sudo make && sudo make install && sudo ./configure --with-features=huge --enable-multibyte --enable-python3interp=yes --with-python3-config-dir=/usr/bin/python3-config --enable-gui=gtk2 --enable-cscope --enable-fail-if-missing --prefix=/usr/local'
 
 # Go to ~/.vim/colors directory
 alias vimcolors='cd /home/$USER/.vim/colors'
@@ -18,5 +15,3 @@ alias vimcolors='cd /home/$USER/.vim/colors'
 # Go to ~/.vim/autoload directory
 alias vimautoload='cd /home/$USER/.vim/autoload'
 
-# Go to ~/.vim/bundle directory
-alias vimbundle='cd /home/$USER/.vim/bundle'
