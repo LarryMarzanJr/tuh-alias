@@ -29,6 +29,6 @@ alias reboot='sudo reboot'
 # shortcut to my blog project
 alias blog="cd ~/Projects/Markdown/LarryMarzanJr.github.io"
 
-# shortcut to flutter projects
-alias dev="cd /home/joenmarz/Projects/Dart/"
+# shortcut to projets
+alias dev="cd /home/joenmarz/Htdocs/"
 
