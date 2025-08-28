@@ -10,8 +10,10 @@ git clone https://github.com/LarryMarzanJr/tuh-alias.git
 ```
 2. Add the file path inside your existing ~/.bash file:
 ```bash
-. /home/$USER/bashrc-alias/aliases
+echo ". /home/$USER/bashrc-alias/aliases" >> ~/.bashrc_aliases
 ```
+This will be added to the new line of `.bashrc_aliases` instead of overwriting the content.
+
 3. refesh your .bashrc source by typing:
 ```bash
 source ~/.bashrc
