@@ -6,13 +6,24 @@ These are bash aliases and customization. Each file explained below.
 ## Method 1
 1. Clone this repository at your home directory
 ```bash
-git clone https://github.com/LarryMarzanJr/tuh-alias.git
+git clone https://github.com/LarryMarzanJr/tuh-alias.git ~/.tuh-alias
 ```
-2. Add the file path inside your existing ~/.bash file:
+2. Add the file path inside your existing ~/.bash_aliases file:
 ```bash
-echo ". /home/$USER/bashrc-alias/aliases" >> ~/.bashrc_aliases
+echo ". /home/$USER/.tuh-alias" >> ~/.bash_aliases
 ```
-This will be added to the new line of `.bashrc_aliases` instead of overwriting the content.
+Since by default in Debian 12, the .bash_aliases is defined for alias library (line 100 in .bashrc). You will see something like this:
+```
+...
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+...
+```
+
+This command will be added to the new line of `.bash_aliases` instead of overwriting the content.
 
 3. refesh your .bashrc source by typing:
 ```bash
