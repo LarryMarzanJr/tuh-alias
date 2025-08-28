@@ -10,7 +10,7 @@ git clone https://github.com/LarryMarzanJr/tuh-alias.git ~/.tuh-alias
 ```
 2. Add the file path inside your existing ~/.bash_aliases file:
 ```bash
-echo ". /home/$USER/.tuh-alias" >> ~/.bash_aliases
+echo ". /home/$USER/.tuh-alias/.main" >> ~/.bash_aliases
 ```
 Since by default in Debian 12, the .bash_aliases is defined for alias library (line 100 in .bashrc). You will see something like this:
 ```
